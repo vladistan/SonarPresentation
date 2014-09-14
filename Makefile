@@ -5,7 +5,8 @@ all: slides.pdf
 %.tex: %.md
 	wiki2beamer  $< > $@
 
-SECTIONS = intro.tex 
+SECTIONS = intro.tex sonar.tex
+
 
 clean:
 	-rm -f slides.aux $(SECTIONS)
